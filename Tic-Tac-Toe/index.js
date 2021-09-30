@@ -84,6 +84,9 @@ const checkGameStatus = () => {
    for(var i=0;i<9;i++){
       cellDivs[i].classList.add('tie');
    }
+   setInterval(() => {
+      location.reload();
+   }, 1000);
   } else {
     xIsNext = !xIsNext;
     if (xIsNext) {
