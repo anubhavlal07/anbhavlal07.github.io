@@ -39,7 +39,7 @@ xhr.onload = function () {
 
 xhr.send();
 
-document.addEventListener(
+/*document.addEventListener(
   "keydown",
   function () {
     if (event.keyCode == 123) {
@@ -68,6 +68,33 @@ if (document.addEventListener) {
 } else {
   document.attachEvent("oncontextmenu", function () {
     alert("This function has been disabled to prevent from copying content.");
+    window.event.returnValue = false;
+  });
+}*/
+document.addEventListener(
+  "keydown",
+  function () {
+    if (event.keyCode == 123) {
+      return false;
+    } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+      return false;
+    } else if (event.ctrlKey && event.keyCode == 85) {
+      return false;
+    }
+  },
+  false
+);
+
+if (document.addEventListener) {
+  document.addEventListener(
+    "contextmenu",
+    function (e) {
+      e.preventDefault();
+    },
+    false
+  );
+} else {
+  document.attachEvent("oncontextmenu", function () {
     window.event.returnValue = false;
   });
 }
