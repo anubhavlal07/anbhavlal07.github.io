@@ -39,46 +39,17 @@ xhr.onload = function () {
 
 xhr.send();
 
-/*document.addEventListener(
-  "keydown",
-  function () {
-    if (event.keyCode == 123) {
-      alert("This function has been disabled to prevent from copying content.");
-      return false;
-    } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
-      alert("This function has been disabled to prevent from copying content.");
-      return false;
-    } else if (event.ctrlKey && event.keyCode == 85) {
-      alert("This function has been disabled to prevent from copying content.");
-      return false;
-    }
-  },
-  false
-);
-
-if (document.addEventListener) {
-  document.addEventListener(
-    "contextmenu",
-    function (e) {
-      alert("This function has been disabled to prevent from copying content.");
-      e.preventDefault();
-    },
-    false
-  );
-} else {
-  document.attachEvent("oncontextmenu", function () {
-    alert("This function has been disabled to prevent from copying content.");
-    window.event.returnValue = false;
-  });
-}*/
 document.addEventListener(
   "keydown",
   function () {
     if (event.keyCode == 123) {
+//       alert("This function has been disabled to prevent from copying content.");
       return false;
     } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+//       alert("This function has been disabled to prevent from copying content.");
       return false;
     } else if (event.ctrlKey && event.keyCode == 85) {
+//       alert("This function has been disabled to prevent from copying content.");
       return false;
     }
   },
@@ -89,12 +60,14 @@ if (document.addEventListener) {
   document.addEventListener(
     "contextmenu",
     function (e) {
+//       alert("This function has been disabled to prevent from copying content.");
       e.preventDefault();
     },
     false
   );
 } else {
   document.attachEvent("oncontextmenu", function () {
+//     alert("This function has been disabled to prevent from copying content.");
     window.event.returnValue = false;
   });
 }
