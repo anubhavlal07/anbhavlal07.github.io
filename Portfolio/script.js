@@ -36,15 +36,15 @@ $(document).ready(function () {
   // typing text animation script
   var typed = new Typed(".typing", {
     strings: ["Student", "Developer", "Researcher", "Designer"],
-    typeSpeed: 100,
-    backSpeed: 60,
+    typeSpeed: 60,
+    backSpeed: 40,
     loop: true,
   });
 
   var typed = new Typed(".typing-2", {
     strings: ["Student", "Developer", "Researcher", "Designer"],
-    typeSpeed: 100,
-    backSpeed: 60,
+    typeSpeed: 40,
+    backSpeed: 20,
     loop: true,
   });
 
@@ -73,19 +73,22 @@ $(document).ready(function () {
 });
 
 // Disabled Input from keyboard
-document.addEventListener(
-  "keydown",
-  function () {
-    if (event.keyCode == 123) {
-      return false;
-    } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
-      return false;
-    } else if (event.ctrlKey && event.keyCode == 85) {
-      return false;
-    }
-  },
-  false
-);
+(document.onkeydown = function (event) {
+  if (event.keyCode == 123) {
+    return false;
+  } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+    return false;
+  } else if (event.ctrlKey && event.shiftKey && event.keyCode == 67) {
+    return false;
+  } else if (event.ctrlKey && event.shiftKey && event.keyCode == 86) {
+    return false;
+  } else if (event.ctrlKey && event.shiftKey && event.keyCode == 117) {
+    return false;
+  } else if (event.ctrlKey && event.keyCode == 85) {
+    return false;
+  }
+}),
+  false;
 
 if (document.addEventListener) {
   document.addEventListener(
