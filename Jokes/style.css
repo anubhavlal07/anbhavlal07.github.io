@@ -9,7 +9,7 @@ body {
   background-image: linear-gradient(315deg, #d8dede 0%, #e5bdf6 74%);
 }
 .card {
-  width: 450px;
+/*   width: 450px; */
   padding: 50px 40px;
   background-color: #fafdfd;
   position: absolute;
