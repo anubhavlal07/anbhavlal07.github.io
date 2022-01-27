@@ -2,9 +2,9 @@ const jokeContainer = document.getElementById("joke");
 const genere = document.getElementById("genere");
 const btn = document.getElementById("btn");
 
-// let url = "https://jokeapi-v2.p.rapidapi.com/joke/Any?type=single&format=json&idRange=0-319&blacklistFlags=religious%2Cracist%2Cpolitical";
-let url =
-  "https://jokeapi-v2.p.rapidapi.com/joke/Any?format=json&idRange=0-319&blacklistFlags=religious%2Cracist%2Cpolitical";
+// let url = "https://jokeapi-v2.p.rapidapi.com/joke/Any?type=single&format=json&idRange=0-319&blacklistFlags=religious%2Cracist%2Cpolitical"; Single Jokes
+ //let url = "https://jokeapi-v2.p.rapidapi.com/joke/Any?format=json&idRange=0-319&blacklistFlags=religious%2Cracist%2Cpolitical"; All type of Jokes
+let url = "https://jokeapi-v2.p.rapidapi.com/joke/Programming,Miscellaneous,Pun,Spooky,Christmas?format=json&idRange=0-319&blacklistFlags=religious%2Cracist%2Cpolitical"
 let host = "jokeapi-v2.p.rapidapi.com";
 let key = "73fca24707msh00e5c54fbc7dd20p15680fjsn9e57788ef38d";
 let timeleft;
@@ -45,3 +45,34 @@ var downloadTimer = setInterval(function () {
     timeleft = 30;
   }
 }, 1000);
+
+
+// Disabled Input from keyboard
+(document.onkeydown = function (event) {
+  if (event.keyCode == 123) {
+    return false;
+  } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+    return false;
+  } else if (event.ctrlKey && event.shiftKey && event.keyCode == 86) {
+    return false;
+  } else if (event.ctrlKey && event.shiftKey && event.keyCode == 117) {
+    return false;
+  } else if (event.ctrlKey && event.keyCode == 85) {
+    return false;
+  }
+}),
+  false;
+
+if (document.addEventListener) {
+  document.addEventListener(
+    "contextmenu",
+    function (e) {
+      e.preventDefault();
+    },
+    false
+  );
+} else {
+  document.attachEvent("oncontextmenu", function () {
+    window.event.returnValue = false;
+  });
+}
