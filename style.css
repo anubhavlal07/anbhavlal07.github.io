@@ -274,7 +274,7 @@ section .title::after {
   text-align: center;
 }
 .knowledge .knowledge-content .card {
-  width: calc(33% - 20px);
+  width: calc(50% - 20px);
   background: #222;
   text-align: center;
   border-radius: 6px;
