@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle&family=Special+Elite&family=Ubuntu+Mono&display=swap");
+* {
+  font-family: "Dongle", sans-serif;
+  font-size: 23px;
+  margin: 0px;
+  padding: 0px;
+}
+.type {
+  width: 100%;
+  background-color: black;
+  color: whitesmoke;
+  align-content: center;
+  text-align: center;
+  font-family: "Ubuntu Mono", monospace;
+  margin-bottom: 0px;
+}
+
+.Cards {
+  background-color: black;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  position: center;
+}
+.page-footer {
+  background-color: black;
+}
+.footer-copyright {
+  color: white;
+  background-color: black;
+}
+.greet {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+.logo {
+  font-size: 50px;
+  text-decoration: none;
+}
+.nav {
+  color: white;
+  display: inline-block;
+  margin-right: 1rem;
+  font-size: 2.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+}
+.black {
+  background-color: black;
+}
+.cursorSize,.textSize{
+    font-size: 45px;
+}
