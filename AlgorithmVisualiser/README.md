@@ -4,7 +4,7 @@
 
 A better visualization of different algorithms made with React. 
 
-Visit : https://anubhavlal07.github.io/AlgorithmVisualizer/
+Visit : https://anubhavlal07.github.io/AlgorithmVisualiser/
 
 ![Visitor Count](https://visitor-badge.laobi.icu/badge?page_id=anubhavlal07.AlgorithmVisualizer)
 
