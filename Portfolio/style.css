@@ -44,7 +44,7 @@ footer {
 }
 .about .about-content,
 .knowledge .knowledge-content,
-.skills .skills-content{
+.skills .skills-content {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -263,12 +263,15 @@ section .title::after {
   color: #fff;
   background: #111;
 }
-.knowledge .title::before{
+.knowledge .title::before {
   background: #fff;
 }
-.knowledge .title::after{
+.knowledge .title::after {
   background: #111;
   content: "what i can do";
+}
+.knowledge .knowledge-content .card .text {
+  text-align: center;
 }
 .knowledge .knowledge-content .card {
   width: calc(33% - 20px);
@@ -281,6 +284,7 @@ section .title::after {
 }
 .knowledge .knowledge-content .card:hover {
   background: #40e0d0;
+  color: #111;
 }
 .knowledge .knowledge-content .card .box {
   transition: all 0.3s ease;
@@ -292,9 +296,6 @@ section .title::after {
   font-size: 50px;
   color: #40e0d0;
   transition: color 0.3s ease;
-}
-.knowledge .knowledge-content .card:hover i {
-  color: #fff;
 }
 .knowledge .knowledge-content .card .text {
   font-size: 25px;
@@ -317,6 +318,8 @@ section .title::after {
 }
 .skills .skills-content .left p {
   text-align: left;
+  text-align: justify;
+  text-justify: inter-word;
 }
 .skills .skills-content .left a {
   display: inline-block;
@@ -330,9 +333,15 @@ section .title::after {
   border: 2px solid #40e0d0;
   transition: all 0.3s ease;
 }
-.skills .skills-content .left a:hover {
+/* .skills .skills-content .left a:hover {
   color: #40e0d0;
   background: none;
+} */
+.skills .skills-content .right .text {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 40px;
 }
 .skills .skills-content .right .bars {
   margin-bottom: 15px;
@@ -376,6 +385,15 @@ section .title::after {
 .skills-content .right .mongo::before {
   width: 20%;
 }
+.skills-content .right .express::before {
+  width: 10%;
+}
+.skills-content .right .react::before {
+  width: 15%;
+}
+.skills-content .right .node::before {
+  width: 15%;
+}
 .skills-content .right .java::before {
   width: 70%;
 }
@@ -386,22 +404,22 @@ section .title::after {
   width: 80%;
 }
 #git {
-    text-decoration: none;
-    font-family: "Ubuntu", sans-serif;
-    background: white;
-    color: #002cf0;
-    font-size: 18px;
-    font-weight: 600;
-    padding: 0px;
-    margin-top: 20px;
-    border: none;
+  text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
+  background: white;
+  color: #002cf0;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 0px;
+  margin-top: 20px;
+  border: none;
 }
-#git:hover{
-    font-size: 20px;
-    transition: all 0.3s ease;
-    font-family: "Poppins", sans-serif;
-    color: #40e0d0;
-  }
+#git:hover {
+  font-size: 20px;
+  transition: all 0.3s ease;
+  font-family: "Poppins", sans-serif;
+  color: #40e0d0;
+}
 
 /* footer section styling */
 footer {
