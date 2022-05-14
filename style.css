@@ -333,10 +333,35 @@ section .title::after {
   border: 2px solid #40e0d0;
   transition: all 0.3s ease;
 }
+.skills .skills-content .left span {
+  font-size: 13px;
+  font-style: italic;
+}
+
+#git {
+  text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
+  background: white;
+  color: #002cf0;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 0px;
+  margin-top: 20px;
+  border: none;
+}
+#git:hover {
+  font-size: 20px;
+  transition: all 0.3s ease;
+  font-family: "Poppins", sans-serif;
+  color: #40e0d0;
+}
 /* .skills .skills-content .left a:hover {
   color: #40e0d0;
   background: none;
 } */
+.skills .skills-content .right .img{
+  width: 100%;
+}
 .skills .skills-content .right .text {
   font-size: 20px;
   font-weight: 600;
@@ -355,6 +380,7 @@ section .title::after {
 .skills .skills-content .right span {
   font-weight: 500;
   font-size: 18px;
+  font-family: "Ubuntu", sans-serif;
 }
 .skills .skills-content .right .line {
   height: 5px;
@@ -402,23 +428,6 @@ section .title::after {
 }
 .skills-content .right .CPP::before {
   width: 80%;
-}
-#git {
-  text-decoration: none;
-  font-family: "Ubuntu", sans-serif;
-  background: white;
-  color: #002cf0;
-  font-size: 18px;
-  font-weight: 600;
-  padding: 0px;
-  margin-top: 20px;
-  border: none;
-}
-#git:hover {
-  font-size: 20px;
-  transition: all 0.3s ease;
-  font-family: "Poppins", sans-serif;
-  color: #40e0d0;
 }
 
 /* footer section styling */
