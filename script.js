@@ -103,3 +103,7 @@ if (document.addEventListener) {
     window.event.returnValue = false;
   });
 }
+
+// Dynamic year Footer
+var date = new Date().getFullYear();
+document.getElementById("footer").innerHTML= footer.innerHTML += `Created by <a href="https://github.com/anubhavlal07" target="_blank">Anubhav Lal</a> | &copy; ${date} All Rights Reserved.`
