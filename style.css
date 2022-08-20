@@ -276,7 +276,7 @@ section .title::after {
 .knowledge .knowledge-content .card {
   width: calc(33% - 20px);
   background: #222;
-  text-align: center;
+  text-align: justify;
   border-radius: 6px;
   padding: 50px 25px;
   cursor: pointer;
@@ -342,7 +342,7 @@ section .title::after {
   text-decoration: none;
   font-family: "Ubuntu", sans-serif;
   background: white;
-  color: #002cf0;
+  color: #126ee7;
   font-size: 18px;
   font-weight: 600;
   padding: 0px;
@@ -352,7 +352,6 @@ section .title::after {
 #git:hover {
   font-size: 20px;
   transition: all 0.3s ease;
-  font-family: "Poppins", sans-serif;
   color: #40e0d0;
 }
 /* .skills .skills-content .left a:hover {
@@ -443,6 +442,7 @@ footer span a {
 }
 footer span a:hover {
   text-decoration: underline;
+  color: #d1d1d1;
 }
 
 /* responsive media query start */
