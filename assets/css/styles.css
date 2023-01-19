@@ -394,6 +394,7 @@ body.dark-theme {
   font-family: var(--title-font);
   color: var(--title-color);
   padding-right: 4rem;
+  text-align: justify;
 }
 
 
@@ -521,7 +522,8 @@ body.dark-theme {
   color: var(--text-color-light);
 }
 
-.qualificationCity {
+.qualificationCity,
+.qualificationYear {
   margin-bottom: .75rem;
 }
 
