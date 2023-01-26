@@ -394,6 +394,7 @@ body.dark-theme {
   font-family: var(--title-font);
   color: var(--title-color);
   padding-right: 4rem;
+  display: contents;
   text-align: justify;
 }
 
@@ -834,6 +835,9 @@ body.dark-theme {
   margin-top: 4.5rem;
   font-size: var(--smaller-font-size);
   color: var(--text-color-light);
+}
+.footerCopy a{
+  text-decoration: none;
 }
 
 
