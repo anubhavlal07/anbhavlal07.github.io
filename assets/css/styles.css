@@ -456,6 +456,7 @@ body.dark-theme {
 }
 
 .skillSubtitle {
+  padding-top: 2px;
   font-size: var(--tiny-font-size);
   color: var(--text-color-light);
 }
@@ -833,7 +834,7 @@ body.dark-theme {
 .footerCopy {
   display: block;
   margin-top: 4.5rem;
-  font-size: var(--smaller-font-size);
+  font-size: var(--small-font-size);
   color: var(--text-color-light);
 }
 .footerCopy a{
