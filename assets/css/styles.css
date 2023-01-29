@@ -837,7 +837,8 @@ body.dark-theme {
   font-size: var(--small-font-size);
   color: var(--text-color-light);
 }
-.footerCopy a{
+
+.footerCopy a {
   text-decoration: none;
 }
 
