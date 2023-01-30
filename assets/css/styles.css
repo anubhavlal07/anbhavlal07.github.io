@@ -396,7 +396,7 @@ body.dark-theme {
 }
 
 .homeInfoTitle a:hover {
-  color: var(--text-color-light);
+  color: var(--first-color);
 }
 
 .homeInfoDescription {
