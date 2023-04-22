@@ -49,61 +49,6 @@ let swiper = new Swiper(".projectContainer", {
   },
 });
 
-/*=============== EMAIL JS ===============*/
-const contactForm = document.getElementById("contactForm");
-const contactName = document.getElementById("contactName");
-const contactEmail = document.getElementById("contactEmail");
-const contactMessage = document.getElementById("contactMessage");
-const contactAlert = document.getElementById("contactAlert");
-
-const sendEmail = (e) => {
-  e.preventDefault();
-
-  // check if the field has a value
-  if (
-    contactName.value === "" ||
-    contactEmail.value === "" ||
-    contactMessage.value === ""
-  ) {
-    // Alert color
-    contactAlert.classList.remove("colorBlue");
-    contactAlert.classList.add("colorRed");
-
-    // Show Alert
-    contactAlert.textContent = "*Please enter all the details";
-  } else {
-    // serviceID - templateID - #form - publicKey
-    emailjs
-      .sendForm(
-        "service_oj3eo7t",
-        "emailtemplate69",
-        "#contactForm",
-        "q6rJOn8gEwJVXN6WY"
-      )
-      .then(
-        () => {
-          // show message and add color
-          contactAlert.classList.add("colorBlue");
-          contactAlert.textContent = " Message sent ✅";
-
-          // Remove message after 5 seconds
-          setTimeout(() => {
-            contactAlert.textContent = "";
-          }, 5000);
-        },
-        (error) => {
-          alert("OOPS! Something went wrong...", error);
-        }
-      );
-    // To clear the input field
-    contactName.value = "";
-    contactEmail.value = "";
-    contactMessage.value = "";
-  }
-};
-
-contactForm.addEventListener("submit", sendEmail);
-
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
 const sections = document.querySelectorAll("section[id]");
@@ -210,34 +155,3 @@ let year = new Date().getFullYear();
 document.getElementById(
   "footerCopy"
 ).innerHTML = `Developed and maintained by <a href="https://github.com/anubhavlal07" target="_blank">Anubhav Lal</a> <br> &copy; ${year} All Rights Reserved.`;
-
-// Diable input from users
-(document.onkeydown = function (event) {
-  if (event.keyCode == 123) {
-    return false;
-  } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
-    return false;
-  } else if (event.ctrlKey && event.shiftKey && event.keyCode == 67) {
-    return false;
-  } else if (event.ctrlKey && event.shiftKey && event.keyCode == 86) {
-    return false;
-  } else if (event.ctrlKey && event.shiftKey && event.keyCode == 117) {
-    return false;
-  } else if (event.ctrlKey && event.keyCode == 85) {
-    return false;
-  }
-}),
-  false;
-if (document.addEventListener) {
-  document.addEventListener(
-    "contextmenu",
-    function (e) {
-      e.preventDefault();
-    },
-    false
-  );
-} else {
-  document.attachEvent("oncontextmenu", function () {
-    window.event.returnValue = false;
-  });
-}
