@@ -28,3 +28,6 @@ if (document.addEventListener) {
     window.event.returnValue = false;
   });
 }
+console.log(
+  "Congratulations, you've achieved ultimate nerd status. Impressive 😂👌👍"
+);
