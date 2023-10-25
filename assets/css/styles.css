@@ -123,8 +123,7 @@ body.dark-theme {
 }
 
 /*========== 
-    Color changes in some parts of 
-    the website, in light theme
+    Color changes in some parts of  the website, in light theme
 ==========*/
 .dark-theme .nav,
 .dark-theme .navMenu,
@@ -147,7 +146,7 @@ body.dark-theme {
 }
 
 .dark-theme::-webkit-scrollbar {
-  background-color: hsl(207, 4%, 15%);
+  background-color: hsl(207, 4%, 10%);
 }
 
 .dark-theme::-webkit-scrollbar-thumb {
@@ -858,7 +857,7 @@ body.dark-theme {
 ::-webkit-scrollbar {
   width: 0.6rem;
   border-radius: 0.5rem;
-  background-color: hsl(207, 4%, 75%);
+  background-color: hsl(207, 4%, 99%);
 }
 
 ::-webkit-scrollbar-thumb {
