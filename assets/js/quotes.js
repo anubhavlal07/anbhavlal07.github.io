@@ -16,7 +16,8 @@ const fetchQuote = async () => {
     } else {
       // If a quote does not exist for the current date in local storage, fetch it
       const response = await fetch(
-        "https://api.quotable.io/quotes/random?tags=technology,famous-quotes"
+        "https://api.quotable.io/quotes/random?tags=technology,famous-quotes|happiness|wisdom"
+        // "https://api.quotable.io/quotes/random?tags=technology,famous-quotes"
       );
 
       if (response.ok) {
