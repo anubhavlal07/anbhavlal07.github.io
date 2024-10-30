@@ -28,7 +28,7 @@ const fetchQuote = async () => {
         <span id="quote" class="homeInfoDescription">${quote}</span>
       </div>`;
         quoteElement.innerHTML = display;
-        console.log(data);
+        console.log(data[0]);
         // Store the quote in local storage for the current date
         localStorage.setItem(currentDate, quote);
       } else {
